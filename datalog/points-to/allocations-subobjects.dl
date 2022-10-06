@@ -263,7 +263,7 @@ not_array_index(?component) :- path_component_at_any_index(?component).
   alloc_subregion_base(?region, ?base) :-
     _alloc_subregion(?region, ?base, _, _, _, _).
 
-  .decl alloc_subregion_root(?region: AllocSubregion, ?root: Allocation) inline
+  .decl alloc_subregion_root(?region: AllocSubregion, ?root: Allocation)
   alloc_subregion_root(?region, ?root) :-
     _alloc_subregion(?region, _, _, ?root, _, _).
 
